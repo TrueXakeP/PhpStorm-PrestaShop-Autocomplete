@@ -7,8 +7,12 @@ abstract class AdminStatsTabController extends AdminStatsTabControllerCore {}
 abstract class Cache extends CacheCore {}
 abstract class CarrierModule extends CarrierModuleCore {}
 abstract class Controller extends ControllerCore {}
+abstract class CurrencyRateModule extends CurrencyRateModuleCore {}
 abstract class Db extends DbCore {}
+abstract class ErrorModule extends ErrorModuleCore {}
 abstract class HTMLTemplate extends HTMLTemplateCore {}
+abstract class ImportModule extends ImportModuleCore {}
+abstract class LibraryModule extends LibraryModuleCore {}
 abstract class Module extends ModuleCore {}
 abstract class ModuleAdminController extends ModuleAdminControllerCore {}
 abstract class ModuleFrontController extends ModuleFrontControllerCore {}
@@ -16,6 +20,7 @@ abstract class ModuleGraph extends ModuleGraphCore {}
 abstract class ModuleGraphEngine extends ModuleGraphEngineCore {}
 abstract class ModuleGrid extends ModuleGridCore {}
 abstract class ModuleGridEngine extends ModuleGridEngineCore {}
+abstract class ModuleStats extends ModuleStatsCore {}
 abstract class ObjectModel extends ObjectModelCore {}
 abstract class PaymentModule extends PaymentModuleCore {}
 abstract class ProductListingFrontController extends ProductListingFrontControllerCore {}
@@ -186,7 +191,6 @@ class CryptBlowfish extends CryptBlowfishCore {}
 class CssMinifier extends CssMinifierCore {}
 class CSV extends CSVCore {}
 class Currency extends CurrencyCore {}
-class CurrencyRateModule extends CurrencyRateModuleCore {}
 class Customer extends CustomerCore {}
 class CustomerAddressForm extends CustomerAddressFormCore {}
 class CustomerAddressFormatter extends CustomerAddressFormatterCore {}
@@ -211,7 +215,6 @@ class DiscountController extends DiscountControllerCore {}
 class Dispatcher extends DispatcherCore {}
 class Employee extends EmployeeCore {}
 class Encryptor extends EncryptorCore {}
-class ErrorModule extends ErrorModuleCore {}
 class FaviconController extends FaviconControllerCore {}
 class Feature extends FeatureCore {}
 class FeatureValue extends FeatureValueCore {}
@@ -249,12 +252,10 @@ class IdentityController extends IdentityControllerCore {}
 class Image extends ImageCore {}
 class ImageManager extends ImageManagerCore {}
 class ImageType extends ImageTypeCore {}
-class ImportModule extends ImportModuleCore {}
 class IndexController extends IndexControllerCore {}
 class JavascriptManager extends JavascriptManagerCore {}
 class JsMinifier extends JsMinifierCore {}
 class Language extends LanguageCore {}
-class LibraryModule extends LibraryModuleCore {}
 class Link extends LinkCore {}
 class LinkProxy extends LinkProxyCore {}
 class LocalizationPack extends LocalizationPackCore {}
@@ -264,7 +265,6 @@ class ManufacturerController extends ManufacturerControllerCore {}
 class Media extends MediaCore {}
 class Message extends MessageCore {}
 class Meta extends MetaCore {}
-class ModuleStats extends ModuleStatsCore {}
 class MyAccountController extends MyAccountControllerCore {}
 class NewProductsController extends NewProductsControllerCore {}
 class Notification extends NotificationCore {}
