@@ -28,6 +28,7 @@ abstract class ProductPresentingFrontController extends ProductPresentingFrontCo
 abstract class StockManagerModule extends StockManagerModuleCore {}
 abstract class TaxManagerModule extends TaxManagerModuleCore {}
 abstract class Template extends Smarty_Internal_TemplateBase {}
+abstract class smartyTemplate extends Smarty_Internal_TemplateBase {}
 abstract class TreeToolbarButton extends TreeToolbarButtonCore {}
 class Access extends AccessCore {}
 class Address extends AddressCore {}
