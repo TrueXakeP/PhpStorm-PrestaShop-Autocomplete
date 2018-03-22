@@ -21,6 +21,7 @@ abstract class ProductListingFrontController extends ProductListingFrontControll
 abstract class ProductPresentingFrontController extends ProductPresentingFrontControllerCore {}
 abstract class StockManagerModule extends StockManagerModuleCore {}
 abstract class TaxManagerModule extends TaxManagerModuleCore {}
+abstract class Template extends Smarty_Internal_TemplateBase {}
 abstract class TreeToolbarButton extends TreeToolbarButtonCore {}
 class Access extends AccessCore {}
 class Address extends AddressCore {}
@@ -102,6 +103,7 @@ class AdminSlipController extends AdminSlipControllerCore {}
 class AdminSpecificPriceRuleController extends AdminSpecificPriceRuleControllerCore {}
 class AdminStatesController extends AdminStatesControllerCore {}
 class AdminStatsController extends AdminStatsControllerCore {}
+class AdminStatsTabController extends AdminStatsTabControllerCore {}
 class AdminStatusesController extends AdminStatusesControllerCore {}
 class AdminStockConfigurationController extends AdminStockConfigurationControllerCore {}
 class AdminStockCoverController extends AdminStockCoverControllerCore {}
@@ -128,16 +130,19 @@ class AttachmentController extends AttachmentControllerCore {}
 class Attribute extends AttributeCore {}
 class AttributeGroup extends AttributeGroupCore {}
 class AuthController extends AuthControllerCore {}
+class Cache extends CacheCore {}
 class CacheApc extends CacheApcCore {}
 class CacheMemcache extends CacheMemcacheCore {}
 class CacheMemcached extends CacheMemcachedCore {}
 class CacheXcache extends CacheXcacheCore {}
 class Carrier extends CarrierCore {}
+class CarrierModule extends CarrierModuleCore {}
 class Cart extends CartCore {}
 class CartChecksum extends CartChecksumCore {}
 class CartController extends CartControllerCore {}
 class CartRule extends CartRuleCore {}
 class Category extends CategoryCore {}
+class CategoryController extends CategoryControllerCore {}
 class CccReducer extends CccReducerCore {}
 class ChangeCurrencyController extends ChangeCurrencyControllerCore {}
 class Chart extends ChartCore {}
@@ -152,6 +157,7 @@ class CMSCategory extends CMSCategoryCore {}
 class CmsController extends CmsControllerCore {}
 class CMSRole extends CMSRoleCore {}
 class Combination extends CombinationCore {}
+class CompareProduct extends CompareProductCore {}
 class ConditionsToApproveFinder extends ConditionsToApproveFinderCore {}
 class Configuration extends ConfigurationCore {}
 class ConfigurationKPI extends ConfigurationKPICore {}
@@ -161,6 +167,7 @@ class ConnectionsSource extends ConnectionsSourceCore {}
 class Contact extends ContactCore {}
 class ContactController extends ContactControllerCore {}
 class Context extends ContextCore {}
+class Controller extends ControllerCore {} //?
 class Cookie extends CookieCore {}
 class Country extends CountryCore {}
 class CssMinifier extends CssMinifierCore {}
@@ -180,11 +187,13 @@ class CustomerThread extends CustomerThreadCore {}
 class Customization extends CustomizationCore {}
 class CustomizationField extends CustomizationFieldCore {}
 class DateRange extends DateRangeCore {}
+class Db extends DbCore {} //?
 class DbMySQLi extends DbMySQLiCore {}
 class DbPDO extends DbPDOCore {}
 class DbQuery extends DbQueryCore {}
 class Delivery extends DeliveryCore {}
 class DeliveryOptionsFinder extends DeliveryOptionsFinderCore {}
+class Discount extends DiscountCore {}
 class DiscountController extends DiscountControllerCore {}
 class Dispatcher extends DispatcherCore {}
 class Employee extends EmployeeCore {}
@@ -233,12 +242,16 @@ class LinkProxy extends LinkProxyCore {}
 class LocalizationPack extends LocalizationPackCore {}
 class Mail extends MailCore {}
 class Manufacturer extends ManufacturerCore {}
+class ManufacturerController extends ManufacturerControllerCore {}
 class Media extends MediaCore {}
 class Message extends MessageCore {}
 class Meta extends MetaCore {}
+class Module extends ModuleCore {}
+class ModuleAdminController extends ModuleAdminControllerCore {}
 class ModuleFrontController extends ModuleFrontControllerCore {}
 class MyAccountController extends MyAccountControllerCore {}
 class Notification extends NotificationCore {}
+class ObjectModel extends ObjectModelCore {} //?
 class Order extends OrderCore {}
 class OrderCarrier extends OrderCarrierCore {}
 class OrderCartRule extends OrderCartRuleCore {}
@@ -261,7 +274,9 @@ class OrderState extends OrderStateCore {}
 class Pack extends PackCore {}
 class Page extends PageCore {}
 class PageNotFoundController extends PageNotFoundControllerCore {}
+class ParentOrderController extends ParentOrderControllerCore {}
 class PasswordController extends PasswordControllerCore {}
+class PaymentModule extends PaymentModuleCore {}
 class PaymentOptionsFinder extends PaymentOptionsFinderCore {}
 class PDF extends PDFCore {}
 class PDFGenerator extends PDFGeneratorCore {}
@@ -292,6 +307,7 @@ class RangeWeight extends RangeWeightCore {}
 class Referrer extends ReferrerCore {}
 class RequestSql extends RequestSqlCore {}
 class Risk extends RiskCore {}
+class Scene extends SceneCore {}
 class Search extends SearchCore {}
 class SearchEngine extends SearchEngineCore {}
 class Shop extends ShopCore {}
@@ -316,6 +332,7 @@ class Store extends StoreCore {}
 class StoresController extends StoresControllerCore {}
 class StylesheetManager extends StylesheetManagerCore {}
 class Supplier extends SupplierCore {}
+class SupplierController extends SupplierControllerCore {}
 class SupplyOrder extends SupplyOrderCore {}
 class SupplyOrderDetail extends SupplyOrderDetailCore {}
 class SupplyOrderHistory extends SupplyOrderHistoryCore {}
@@ -326,11 +343,13 @@ class Tag extends TagCore {}
 class Tax extends TaxCore {}
 class TaxCalculator extends TaxCalculatorCore {}
 class TaxConfiguration extends TaxConfigurationCore {}
+class TaxManager extends TaxRulesTaxManagerCore {}
 class TaxManagerFactory extends TaxManagerFactoryCore {}
 class TaxRule extends TaxRuleCore {}
 class TaxRulesGroup extends TaxRulesGroupCore {}
 class TaxRulesTaxManager extends TaxRulesTaxManagerCore {}
 class TemplateFinder extends TemplateFinderCore {}
+class Theme extends ThemeCore {}
 class Tools extends ToolsCore {}
 class Translate extends TranslateCore {}
 class TranslatedConfiguration extends TranslatedConfigurationCore {}
